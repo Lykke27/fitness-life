@@ -1,0 +1,18 @@
+:root {
+	//===Container config=====
+	--min-screen-width: 360px;
+	--container: 1860px;
+	--container-padding: 15px;
+
+	//===PROJECT VARS==========
+	--primary-pink: #F12D5B;
+	--white: #FFFFFF;
+	--border-correction: -1px; //Размер должен совпадать с --border-line
+}
+
+$root-font-size: 18px;
+$font-family: 'Roboto';
+$font-weght: 400;
+$main-FZ-Color: var(--main-fz-color);
+$main-BG-Color: var(--main-bg-color);
+$line-height: 1.5;
