@@ -1,13 +1,13 @@
+import { type FC } from 'react';
+import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { Swiper } from 'swiper/react';
+
 import 'swiper/css/autoplay';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import './Slider.scss';
-
-import { type FC } from 'react';
-import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
-import { Swiper } from 'swiper/react';
 
 const Slider: FC = ({ children }) => {
   return (

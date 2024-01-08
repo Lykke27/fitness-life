@@ -1,10 +1,8 @@
-import './Reviews.scss';
-
 import { type FC } from 'react';
 import { SwiperSlide } from 'swiper/react';
-
 import { Button, Slider, Text } from '../../components';
 import { slides } from './sliderContent';
+import './Reviews.scss';
 
 const Reviews: FC = () => {
   return (

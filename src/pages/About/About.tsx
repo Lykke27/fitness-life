@@ -1,10 +1,8 @@
-import './About.scss';
-
 import { type FC } from 'react';
 import { SwiperSlide } from 'swiper/react';
-
 import { Button, Slider, Text } from '../../components';
 import { slides } from './sliderContent';
+import './About.scss';
 
 const About: FC = () => {
   return (

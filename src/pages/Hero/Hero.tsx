@@ -1,10 +1,8 @@
-import './Hero.scss';
-
 import { type FC } from 'react';
 import { SwiperSlide } from 'swiper/react';
-
 import { Button, Slider, Text } from '../../components';
 import { slides } from './sliderContent';
+import './Hero.scss';
 
 const Hero: FC = () => {
   return (

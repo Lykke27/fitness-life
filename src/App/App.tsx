@@ -1,9 +1,7 @@
-import './App.scss';
-
 import { Route, Routes } from 'react-router-dom';
-
 import { Header } from '../components';
 import { About, Hero, Reviews } from '../pages';
+import './App.scss';
 
 function App() {
   return (

@@ -1,6 +1,6 @@
+import { type FC, ReactNode } from 'react';
 import './Button.scss';
 
-import { type FC, ReactNode } from 'react';
 interface ButtonTypes {
   children: ReactNode;
 }
