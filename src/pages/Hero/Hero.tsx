@@ -1,11 +1,12 @@
-import { useEffect, type FC } from 'react';
-import Slider from 'react-slick';
-import Text from '../../components/Text/Text';
-import { slides } from './sliderContent';
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Hero.scss';
+
+import { type FC, useEffect } from 'react';
+import Slider from 'react-slick';
+
+import Text from '../../components/Text/Text';
+import { slides } from './sliderContent';
 
 const Hero: FC = () => {
   const settings = {

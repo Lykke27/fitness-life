@@ -1,7 +1,9 @@
-import Header from '../components/Header/Header';
-import { Routes, Route } from 'react-router-dom';
-import Hero from '../pages/Hero/Hero';
 import './App.scss';
+
+import { Route, Routes } from 'react-router-dom';
+
+import Header from '../components/Header/Header';
+import Hero from '../pages/Hero/Hero';
 
 function App() {
   return (

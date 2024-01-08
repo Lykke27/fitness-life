@@ -1,9 +1,10 @@
-import { useEffect, type FC } from 'react';
 import './Header.scss';
 
-import { menuLinks, socialLinks } from './headerContent';
+import { type FC, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+
 import Text from '../Text/Text';
+import { menuLinks, socialLinks } from './headerContent';
 
 const Header: FC = () => {
   const menuItems = menuLinks.map((item) => (
