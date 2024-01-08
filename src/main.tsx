@@ -2,14 +2,25 @@ import './index.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/fonts/Roboto-Regular.ttf';
-import './assets/fonts/Roboto-Medium.ttf';
-import './assets/fonts/Roboto-Bold.ttf';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App/App';
+
+import './assets/fonts/Roboto/Roboto-Regular.ttf';
+import './assets/fonts/Roboto/Roboto-Medium.ttf';
+import './assets/fonts/Roboto/Roboto-Bold.ttf';
+
+import './assets/fonts/Roboto-Mono/RobotoMono-Regular.ttf';
+import './assets/fonts/Roboto-Mono/RobotoMono-Medium.ttf';
+import './assets/fonts/Roboto-Mono/RobotoMono-Bold.ttf';
+
+import './assets/fonts/SourceSerifPro/SourceSerifPro-Regular.otf';
+import './assets/fonts/SourceSerifPro/SourceSerifPro-Bold.otf';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root'),
 );

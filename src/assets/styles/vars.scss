@@ -1,17 +1,21 @@
 :root {
-	//===Container config=====
-	--min-screen-width: 360px;
-	--container: 1860px;
-	--container-padding: 15px;
+  //===Container config=====
+  --min-screen-width: 360px;
+  --container: 1860px;
+  --container-padding: 15px;
 
-	//===PROJECT VARS==========
-	--primary-pink: #F12D5B;
-	--white: #FFFFFF;
-	--border-correction: -1px; //Размер должен совпадать с --border-line
+  //===PROJECT VARS==========
+  --primary-pink: #f12d5b;
+  --white: #ffffff;
+  --border-correction: -1px; //Размер должен совпадать с --border-line
+  --primay: black;
+  --bg-primay: #ffffff;
+
+  --link: #2a0b0b;
 }
 
 $root-font-size: 18px;
-$font-family: 'Roboto';
+$font-family: 'Roboto-Mono', 'Roboto';
 $font-weght: 400;
 $main-FZ-Color: var(--main-fz-color);
 $main-BG-Color: var(--main-bg-color);

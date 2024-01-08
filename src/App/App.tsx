@@ -1,14 +1,22 @@
-import './App.css';
-
-import React, { useState } from 'react';
 import Header from '../components/Header/Header';
-import Main from '../components/Main/Main';
+import { Routes, Route } from 'react-router-dom';
+import Hero from '../pages/Hero/Hero';
+import './App.scss';
 
 function App() {
   return (
     <div className="app">
       <Header />
-      {/* <Hero /> */}
+      <div className="app__layout">
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<Hero />} />
+          <Route path="/reviews" element={<Hero />} />
+          <Route path="/trainings" element={<Hero />} />
+          <Route path="/club" element={<Hero />} />
+          <Route path="/contacts" element={<Hero />} />
+        </Routes>
+      </div>
     </div>
   );
 }

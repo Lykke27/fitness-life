@@ -1,12 +1,12 @@
 import { instagramLogo, telegramLogo } from '../../assets/images';
 
 export const menuLinks = [
-	{ title: 'Главная', section: 'main' },
-	{ title: 'Обо мне', section: 'about' },
-	{ title: 'Отзывы', section: 'reviews' },
-	{ title: 'Тренировки', section: 'trainings' },
-	{ title: 'Зал', section: 'place' },
-	{ title: 'Связаться', section: 'contact' }
+	{ title: 'Главная', link: '/' },
+	{ title: 'Обо мне', link: '/about' },
+	{ title: 'Отзывы', link: '/reviews' },
+	{ title: 'Тренировки', link: '/trainings' },
+	{ title: 'Зал', link: '/club' },
+	{ title: 'Связаться', link: '/contacts' }
 ];
 
 export const socialLinks = [
