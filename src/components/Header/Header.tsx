@@ -19,7 +19,7 @@ const Header: FC = () => {
 
   const socialItems = socialLinks.map((item) => (
     <li className="social__item" key={item.title}>
-      <Link className="menu__link" to={item.link}>
+      <Link className="menu__link" to={item.link} target="blank">
         <img src={item.logo} alt="" />
       </Link>
     </li>

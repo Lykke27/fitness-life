@@ -11,6 +11,7 @@ interface TextProps {
   fontStyle?: 'italic' | 'normal';
   fontWeight?: 400 | 500 | 700;
   color?: string;
+  transform?: 'uppercase';
 }
 
 const sizeMapping: Record<SizeType, string> = {
@@ -35,6 +36,7 @@ const Text: React.FC<TextProps> = ({
   fontWeight,
   fontStyle,
   color = '#fff',
+  transform,
 }) => {
   const Element = as;
 
@@ -47,6 +49,7 @@ const Text: React.FC<TextProps> = ({
     fontStyle: fontStyle === 'italic' ? 'italic' : 'normal',
     fontWeight: fontWeight ? fontWeight : 400,
     color: parsedColor,
+    textTransform: transform,
   };
 
   return <Element style={styles}>{children}</Element>;

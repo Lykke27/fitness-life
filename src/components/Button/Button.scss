@@ -1,0 +1,12 @@
+.button {
+    display: flex;
+    padding: 17px 60px;
+    background-color: var(--primary-pink);
+    border-radius: 7px;
+    transition: 0.3s;
+
+    &:hover {
+            background-color: var(--primary-pink-hover);
+
+    }
+}

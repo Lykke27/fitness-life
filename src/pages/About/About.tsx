@@ -3,9 +3,9 @@ import { Button, Slider, Text } from '../../components';
 import { slides } from './sliderContent';
 import { SwiperSlide } from 'swiper/react';
 
-import './Hero.scss';
+import './About.scss';
 
-const Hero: FC = () => {
+const About: FC = () => {
   return (
     <Slider>
       {slides.map((slide, index) => (
@@ -31,4 +31,4 @@ const Hero: FC = () => {
   );
 };
 
-export default Hero;
+export default About;
