@@ -1,28 +1,29 @@
- .about {
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-    padding-top: 80px;
-    padding-bottom: 120px;
+.about {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  padding-top: 150px;
+  padding-bottom: 200px;
 
-    &__info {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .skills {
       display: flex;
       flex-direction: column;
       gap: 15px;
-      .skills {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        &__list {
 
-        }
+      &__list {
       }
     }
+  }
 
-    &__picture {
+  &__picture {
     img {
-    width: 320px;
-    height: 400px;
-    }
+      object-fit: contain;
+      width: 400px;
+      height: 480px;
     }
   }
+}

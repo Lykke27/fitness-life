@@ -4,4 +4,8 @@ import KarminHero from './hero/karmin-hero.png';
 import instagramLogo from './socials/instagram.svg';
 import telegramLogo from './socials/telegram.svg';
 
-export { heroImage_1, heroImage_2, KarminHero, instagramLogo, telegramLogo };
+import trainingImage_1 from './trainings/individual.jpg';
+import trainingImage_2 from './trainings/group.jpg';
+import trainingImage_3 from './trainings/box.jpg';
+
+export { heroImage_1, heroImage_2, KarminHero, instagramLogo, telegramLogo, trainingImage_1, trainingImage_2, trainingImage_3 };

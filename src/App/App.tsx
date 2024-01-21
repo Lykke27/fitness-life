@@ -1,6 +1,5 @@
-import { Route, Routes } from 'react-router-dom';
 import { Footer, Header } from '../components';
-import { About, Hero, Reviews } from '../pages';
+import { About, Hero, Trainings } from '../pages';
 import './App.scss';
 
 function App() {
@@ -10,6 +9,7 @@ function App() {
       <div className="app__layout">
         <Hero />
         <About />
+        <Trainings />
       </div>
       <Footer />
     </div>

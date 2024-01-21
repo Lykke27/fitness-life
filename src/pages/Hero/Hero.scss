@@ -10,17 +10,17 @@
       height: 100%;
       object-fit: cover;
     }
-    &__content {
-      font-family: 'SansSerifPro';
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
+    // &__content {
+    //   font-family: 'SansSerifPro';
+    //   display: flex;
+    //   align-items: flex-start;
+    //   gap: 10px;
 
-      flex-direction: column;
-      position: absolute;
-      top: 50%;
-      left: 20%;
-      transform: translate(-50%, -50%);
-    }
+    //   flex-direction: column;
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 20%;
+    //   transform: translate(-50%, -50%);
+    // }
   }
 }

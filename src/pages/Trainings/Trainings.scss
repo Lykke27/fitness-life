@@ -1,0 +1,51 @@
+.trainings {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-bottom: 100px;
+
+  &__title {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .training {
+      display: flex;
+      flex-direction: row;
+      background-color: #1E1F22;
+
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+
+      .picture {
+        width: 50%;
+        height: 450px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 70px 50px 50px 50px;
+        gap: 30px;
+
+        ul li{
+            list-style: inside;
+        }
+      }
+    }
+  }
+}

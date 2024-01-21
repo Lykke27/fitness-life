@@ -18,5 +18,5 @@ export const skills = [
     {
     title: 'Тайский бокс',
     color: '#2DB6F1',
-  },
+  }, 
 ];

@@ -1,6 +1,6 @@
 import { type FC, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { socialLinks } from '../../assets/contants/socials';
+import { socialLinks } from '../../assets/constants/socials';
 import Text from '../Text/Text';
 import './Footer.scss';
 
