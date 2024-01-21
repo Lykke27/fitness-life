@@ -1,17 +1,18 @@
 import { type FC, useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import Text from '../Text/Text';
-import { menuLinks, socialLinks } from './headerContent';
+import { menuLinks } from './headerContent';
+import { socialLinks } from '../../assets/contants/socials';
 import './Header.scss';
 
 const Header: FC = () => {
   const menuItems = menuLinks.map((item) => (
     <li className="menu__item" key={item.link}>
-      <NavLink className="menu__link" to={item.link}>
+      <Link className="menu__link" to={item.link} spy={true} smooth={true} duration={700}>
         <Text size="s" as="span" fontStyle="italic" fontWeight={500}>
           {item.title}
         </Text>
-      </NavLink>
+      </Link>
     </li>
   ));
 

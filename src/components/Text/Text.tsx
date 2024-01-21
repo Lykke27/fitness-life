@@ -1,6 +1,6 @@
 import React, { CSSProperties, ReactNode } from 'react';
 
-type SizeType = 's' | 'm' | 'l' | 'xl' | 'xxl';
+type SizeType = 's' | 'm' | 'ml' | 'l' | 'xl' | 'xxl';
 
 interface TextProps {
   as?: keyof JSX.IntrinsicElements;
@@ -17,6 +17,7 @@ interface TextProps {
 const sizeMapping: Record<SizeType, string> = {
   s: '12px',
   m: '14px',
+  ml: '20px',
   l: '36px',
   xl: '40px',
   xxl: '48px',
@@ -25,6 +26,7 @@ const sizeMapping: Record<SizeType, string> = {
 const colors: Record<string, string> = {
   pink: 'var(--primary-pink)',
   white: 'var(--white)',
+  grey: 'var(--grey)',
 };
 
 const Text: React.FC<TextProps> = ({

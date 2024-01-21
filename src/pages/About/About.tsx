@@ -1,32 +1,49 @@
 import { type FC } from 'react';
-import { SwiperSlide } from 'swiper/react';
-import { Button, Slider, Text } from '../../components';
-import { slides } from './sliderContent';
+import { Text } from '../../components';
+import { KarminHero } from '../../assets/images';
 import './About.scss';
+import { skills } from './content';
 
 const About: FC = () => {
   return (
-    <Slider>
-      {slides.map((slide, index) => (
-        <SwiperSlide key={index} className="slide">
-          <img src={slide.image} alt={`Slide ${index}`} />
-          <div className="slide__content">
-            {slide.text && (
-              <Text as="span" color="white" size="xl" fontStyle="italic">
-                {slide.text}
+    <div className="about container" id="about">
+      <div className="about__info">
+        <Text size="m" fontStyle="italic" color="grey" transform="uppercase">
+          Привет, меня зовут
+        </Text>
+        <Text size="xl" color="white" transform="uppercase">
+          АНАСТАСИЯ КАРМИН
+        </Text>
+        <Text size="m" color="grey">
+          Привет! Меня зовут Анастасия Кармин. Я рада приветствовать вас у себя в клубе,
+          расположенном в г. Нови Сад (республика Сербия). Здесь ты найдешь для себя
+          пользу для души и тела, новых друзей и знакомых, общение и поддержку в новой для
+          себя стране. Я, тренер с 10-м стажем в области тайского бокса, фитнеса и
+          стрейчинга, диетолог-нутрициолог, приглашаю тебя в место твоей силы. It’s time!
+        </Text>
+        <div className="skills">
+          <Text size="m" color="white" transform="uppercase">
+            Training skills
+          </Text>
+          <div className="skills__list">
+            {skills.map((skill, index) => (
+              <Text
+                key={`skill_${index}`}
+                size="ml"
+                color={skill.color}
+                transform="uppercase"
+                fontStyle="italic"
+              >
+                {skill.title}
               </Text>
-            )}
-            {slide.buttonText && (
-              <Button>
-                <Text as="span" color="white" size="s" transform="uppercase">
-                  {slide.buttonText}
-                </Text>
-              </Button>
-            )}
+            ))}
           </div>
-        </SwiperSlide>
-      ))}
-    </Slider>
+        </div>
+      </div>
+      <div className="about__picture">
+        <img src={KarminHero} alt="" />
+      </div>
+    </div>
   );
 };
 
