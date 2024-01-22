@@ -38,7 +38,7 @@ const Header: FC = () => {
         <div className="header__inner">
           <div className="header__logo">
             <Text as="span" color="pink">
-              Nasty Fitness Life
+              Nastya Fitness Life
             </Text>
           </div>
           <nav className="header__menu menu">

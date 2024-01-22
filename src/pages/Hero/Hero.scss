@@ -20,6 +20,10 @@
       background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
       pointer-events: none;
     }
+
+    @media (max-width: 720px) {
+      height: 100svh;
+    }
     // &__content {
     //   font-family: 'SansSerifPro';
     //   display: flex;

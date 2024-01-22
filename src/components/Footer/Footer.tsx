@@ -17,7 +17,7 @@ const Footer: FC = () => {
     <footer className="footer container">
       <div className="footer__logo">
         <Text as="span" color="pink">
-          Nasty Fitness Life
+          Nastya Fitness Life
         </Text>
       </div>
       <div className="footer__contacts contacts">
