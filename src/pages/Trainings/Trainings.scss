@@ -4,11 +4,6 @@
   padding-top: 70px;
   padding-bottom: 100px;
 
-  &__title {
-    display: flex;
-    margin-bottom: 50px;
-  }
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -17,7 +12,7 @@
     .training {
       display: flex;
       flex-direction: row;
-      background-color: #1E1F22;
+      background-color: #1e1f22;
 
       &.reverse {
         flex-direction: row-reverse;
@@ -42,8 +37,30 @@
         padding: 70px 50px 50px 50px;
         gap: 30px;
 
-        ul li{
-            list-style: inside;
+        ul li {
+          list-style: inside;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 720px) {
+    padding-bottom: 70px;
+    &__list {
+      .training {
+        flex-direction: column;
+
+        &.reverse {
+          flex-direction: column;
+        }
+
+        .picture {
+          width: 100%;
+        }
+        .info {
+          width: 100%;
+          padding: 20px;
+          padding-bottom: 50px;
         }
       }
     }

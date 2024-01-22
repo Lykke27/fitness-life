@@ -6,6 +6,12 @@
   background-color: #09090b;
   z-index: 2;
 
+  &__container {
+    padding: 0px 20px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
   &__inner {
     display: flex;
     flex-direction: row;
@@ -63,6 +69,12 @@
       flex-direction: row;
       align-items: center;
       gap: 10px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .menu {
+      display: none;
     }
   }
 }

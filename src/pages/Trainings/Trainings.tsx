@@ -16,7 +16,7 @@ const Trainings: FC = () => {
           const markup = { __html: training.description };
           const isOdd = index % 2 !== 0;
           return (
-            <div className={`training ${isOdd && 'reverse'}`} key={index}>
+            <div className={`training ${isOdd ? 'reverse' : ''}`} key={index}>
               <div className="picture">
                 <img src={training.image} alt="" />
               </div>

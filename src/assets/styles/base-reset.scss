@@ -93,10 +93,3 @@ main {
 .footer {
 	flex: 0 0 auto;
 }
-
-[class*='__container'] {
-	max-width: calc(var(--container) + var(--container-padding) * 2);
-	margin: 0 auto;
-	padding: 0px var(--container-padding);
-	height: 100%;
-}

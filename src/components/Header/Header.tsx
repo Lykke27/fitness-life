@@ -1,5 +1,6 @@
-import { type FC, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import { type FC } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import Text from '../Text/Text';
 import { menuLinks } from './headerContent';
 import { socialLinks } from '../../assets/constants/socials';
@@ -8,21 +9,21 @@ import './Header.scss';
 const Header: FC = () => {
   const menuItems = menuLinks.map((item) => (
     <li className="menu__item" key={item.link}>
-      <Link
+      <ScrollLink
         className="menu__link"
         to={item.link}
         spy={true}
         smooth={true}
         duration={700}
-        // offset={30}
       >
         <Text size="s" as="span" fontStyle="italic" fontWeight={500}>
           {item.title}
         </Text>
-      </Link>
+      </ScrollLink>
     </li>
   ));
 
+  console.log(socialLinks);
   const socialItems = socialLinks.map((item) => (
     <li className="social__item" key={item.title}>
       <Link className="menu__link" to={item.link} target="blank">

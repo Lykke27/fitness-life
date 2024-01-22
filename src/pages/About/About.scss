@@ -13,9 +13,6 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
-
-      &__list {
-      }
     }
   }
 
@@ -24,6 +21,20 @@
       object-fit: contain;
       width: 400px;
       height: 480px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    &__picture {
+      img {
+        width: 100%;
+        height: 480px;
+      }
     }
   }
 }
