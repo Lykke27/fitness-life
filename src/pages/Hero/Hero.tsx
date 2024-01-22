@@ -11,6 +11,7 @@ const Hero: FC = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index} className="slide">
             <img src={slide.image} alt={`Slide ${index}`} />
+            <div className="slide__overlay"></div>
             <div className="slide__content">
               {/* {slide.text && (
                 <Text as="span" color="white" size="xl" fontStyle="italic">
