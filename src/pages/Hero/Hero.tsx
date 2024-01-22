@@ -1,6 +1,6 @@
 import { type FC } from 'react';
 import { SwiperSlide } from 'swiper/react';
-import { Slider, Text } from '../../components';
+import { Slider } from '../../components';
 import { slides } from './sliderContent';
 import './Hero.scss';
 
