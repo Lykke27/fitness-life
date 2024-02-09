@@ -2,7 +2,7 @@ import React, { CSSProperties, ReactNode } from 'react';
 
 type SizeType = 's' | 'm' | 'ml' | 'l' | 'xl' | 'xxl';
 
-interface TextProps {
+interface TextPropsTypes {
   as?: keyof JSX.IntrinsicElements;
   size?: SizeType;
   align?: 'left' | 'center' | 'right';
@@ -29,7 +29,7 @@ const colors: Record<string, string> = {
   grey: 'var(--grey)',
 };
 
-const Text: React.FC<TextProps> = ({
+const Text: React.FC<TextPropsTypes> = ({
   as = 'p',
   size,
   align,

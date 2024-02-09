@@ -1,4 +1,9 @@
-export const menuLinks = [
+export interface MenuLinkTypes {
+  title: string;
+  link: string;
+}
+
+export const menuLinks: MenuLinkTypes[] = [
   { title: 'Главная', link: 'hero' },
   { title: 'Обо мне', link: 'about' },
   // { title: 'Отзывы', link: '/reviews' },

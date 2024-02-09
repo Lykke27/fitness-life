@@ -1,6 +1,12 @@
 import { instagramLogo, telegramLogo } from "../images";
 
-export const socialLinks = [
+export interface SocialLinkTypes {
+  title: string;
+  link: string;
+  logo: string; // Здесь предполагается, что путь к логотипу является строкой
+}
+
+export const socialLinks: SocialLinkTypes[] = [
   {
     title: 'Instagram',
     link: 'https://www.instagram.com/karmin_anastasiya_/',

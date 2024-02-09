@@ -3,22 +3,23 @@ import { Text } from '../../components';
 import { trainingsList } from './content';
 import './Trainings.scss';
 
-const Trainings: FC = () => {
+interface TrainingTypes {
+  title: string;
+  description: string;
+  image: string;
+}
+
+const Trainings: FC = (): JSX.Element => {
   return (
     <div className="trainings" id="trainings">
-      {/* <div className="trainings__title container">
-        <Text size="l" color="white" transform="uppercase">
-          Trainings
-        </Text>
-      </div> */}
       <div className="trainings__list">
-        {trainingsList.map((training, index) => {
+        {trainingsList.map((training: TrainingTypes, index) => {
           const markup = { __html: training.description };
           const isOdd = index % 2 !== 0;
           return (
             <div className={`training ${isOdd ? 'reverse' : ''}`} key={index}>
               <div className="picture">
-                <img src={training.image} alt="" />
+                <img src={training.image} alt={training.title} />
               </div>
               <div className="info">
                 <Text color="pink" transform="uppercase" size="l">

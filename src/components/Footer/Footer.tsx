@@ -7,7 +7,12 @@ import './Footer.scss';
 const Footer: FC = () => {
   const socialItems = socialLinks.map((item) => (
     <li className="social__item" key={item.title}>
-      <Link className="footer__link" to={item.link} target="blank">
+      <Link
+        className="footer__link"
+        to={item.link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={item.logo} alt="" />
       </Link>
     </li>
@@ -21,12 +26,12 @@ const Footer: FC = () => {
         </Text>
       </div>
       <div className="footer__contacts contacts">
-        <a type="tel" className="footer__link">
+        <a href="tel:+381637024433" className="footer__link">
           <Text color="white" size="m">
             +381637024433
           </Text>
         </a>
-        <a type="tel" className="footer__link">
+        <a href="mailto:NastyFitnessLive@gmail.com" className="footer__link">
           <Text color="white" size="m">
             NastyFitnessLive@gmail.com
           </Text>

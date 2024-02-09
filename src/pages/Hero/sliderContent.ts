@@ -1,5 +1,11 @@
 import { heroImage_1, heroImage_2 } from '../../assets/images';
 
+interface Slide {
+  number: number;
+  image: string;
+  text?: string; 
+}
+
 export const slides = [
   {
     number: 1,

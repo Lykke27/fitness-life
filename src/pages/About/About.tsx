@@ -1,8 +1,8 @@
 import { type FC } from 'react';
 import { Text } from '../../components';
 import { KarminHero } from '../../assets/images';
-import './About.scss';
 import { skills } from './content';
+import './About.scss';
 
 const About: FC = () => {
   return (
@@ -41,7 +41,7 @@ const About: FC = () => {
         </div>
       </div>
       <div className="about__picture">
-        <img src={KarminHero} alt="" />
+        <img src={KarminHero} alt="Karmin hero image" />
       </div>
     </div>
   );

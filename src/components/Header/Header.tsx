@@ -2,12 +2,12 @@ import { type FC } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import Text from '../Text/Text';
-import { menuLinks } from './headerContent';
-import { socialLinks } from '../../assets/constants/socials';
+import { MenuLinkTypes, menuLinks } from './headerContent';
+import { SocialLinkTypes, socialLinks } from '../../assets/constants/socials';
 import './Header.scss';
 
-const Header: FC = () => {
-  const menuItems = menuLinks.map((item) => (
+const Header: FC = (): JSX.Element => {
+  const menuItems = menuLinks.map((item: MenuLinkTypes) => (
     <li className="menu__item" key={item.link}>
       <ScrollLink
         className="menu__link"
@@ -23,10 +23,9 @@ const Header: FC = () => {
     </li>
   ));
 
-  console.log(socialLinks);
-  const socialItems = socialLinks.map((item) => (
+  const socialItems = socialLinks.map((item: SocialLinkTypes) => (
     <li className="social__item" key={item.title}>
-      <Link className="menu__link" to={item.link} target="blank">
+      <Link className="menu__link" to={item.link} target="_blank">
         <img src={item.logo} alt="" />
       </Link>
     </li>
